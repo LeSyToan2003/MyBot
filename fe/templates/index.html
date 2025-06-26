@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Tư vấn Tuyển sinh</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="chat-avatar">
+        <img src="https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg?semt=ais_hybrid&w=740" alt="bot avatar" />
+      </div>
+      <div class="chat-title"></div>
+    </div>
+
+    <div id="chat-window" class="chat-window">
+      <!-- Tin nhắn sẽ được thêm vào đây -->
+    </div>
+
+    <!-- Nút mũi tên xuống -->
+    <button id="scroll-to-bottom" title="Cuộn xuống">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+
+    <form id="chat-form" class="chat-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Nhập câu hỏi của bạn..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
